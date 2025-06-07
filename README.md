@@ -25,16 +25,16 @@ ___
 
 - The Target ('Fraud') is highly imbalanced with *5.6%* of client accounts classified as fraudulent while *94.4%* of client accounts classified as not fraudulent.
 
-  ![Alt Text] (https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/fraud_distribution.png)
+  ![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/fraud_distribution.png)
 
 - Fraudulent client accounts are reasonably well distributed across districts
 
-   ![Alt Text] (https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/fraud_distribution_district.png)
+   ![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/fraud_distribution_district.png)
 
 
 - There are a few outlier regions with a much higher number of fraudulent client accounts (101-104, 107,311)
 
-  ![Alt Text] (https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/fraud_distribution_region.png)
+  ![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/fraud_distribution_region.png)
 
 
 
