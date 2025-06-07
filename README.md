@@ -25,16 +25,16 @@ ___
 
 - The Target ('Fraud') is highly imbalanced with *5.6%* of client accounts classified as fraudulent while *94.4%* of client accounts classified as not fraudulent.
 
-  ![image](https://github.com/user-attachments/assets/fd9cc19a-ceca-4ee9-8a10-232897c10c7c)
+  ![Alt text] (https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/fraud_distribution.png)
 
 - Fraudulent client accounts are reasonably well distributed across districts
 
-  ![image](https://github.com/user-attachments/assets/5c6e2b16-3329-482c-b761-3f5aee376ebf)
+   ![Alt text] (https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/fraud_distribution_district.png)
 
 
 - There are a few outlier regions with a much higher number of fraudulent client accounts (101-104, 107,311)
 
-  ![image](https://github.com/user-attachments/assets/72f12c39-2561-43ff-9778-0e108df8da43)
+  ![Alt text] (https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/fraud_distribution_region.png)
 
 
 
@@ -83,11 +83,11 @@ ___
 **Logistic vs Decision Tree:**
 - The ROC curve indicates that the logistic regression model outperforms the decision tree model in terms of making correct classifications
 
-![image-2.png](attachment:image-2.png)
+![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/roc_curve_untuned.png)
 
 ***Summary statistics***:
 
-![image.png](attachment:image.png)
+![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/summ_stats_untuned.png)
 
 ___
 #### Next Steps: Dealing with Class imbalance + Hyperparameter tuning
@@ -114,7 +114,7 @@ ___
 
 - This comes with a risk of data leakage and inflated performance on the training set as seen in the table below
 
-![image-2.png](attachment:image-2.png)
+![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/summ_stats_tuned_pipe1.png)
 
 - As a result of this data leakage, later evaluation (cross validation) is not honest and the Train/Test gap is very wide (poor generalization)
 
@@ -127,7 +127,7 @@ ___
 
 - Model results from Pipeline 2 thus end up looking like this:
 
-![image.png](attachment:image.png)
+![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/summ_stats_tuned_pipe2.png)
 
 - We can see that this pipeline gives a truer picture of model performance on the training dataset - the Train/Test gap is less wide making the model more reliable (great generalization)
 
@@ -158,14 +158,14 @@ ___
 
 - As per the ROC curves, `XGBoost` outperforms all other models in terms of predictive power (`AUC = 0.74`)
 
-![image-2.png](attachment:image-2.png)
+![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/roc_curve_tuned_all.png)
 
 - In terms of the other classification metrics (accuracy, F1-score), `XGBoost` also marginally outperforms other models (1st in accuracy, 1st in F1 score)
 
 
 ***Summary statistics***
 
-![image.png](attachment:image.png)
+![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/summ_stats_tuned_pipe2(detailed).png)
 
 #### Summary Findings on the Best Model (Tuned XGBoost)
 ___
@@ -179,11 +179,11 @@ ___
     
     - As per the ROC curve, XGBoost tuned via GridSearchCV also has an `AUC = 0.74`
     
-    ![image-2.png](attachment:image-2.png)
+    ![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/roc_curve_tuned_best.png)
     
 ***Summary Statistics***
 
-![image.png](attachment:image.png)
+![Alt Text](https://github.com/potterblack-ke/Fraud_detection_Project/blob/main/assets/summ_stats_tuned_best.png)
 
 ## Conclusion and Next Steps
 ___
